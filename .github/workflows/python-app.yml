@@ -30,4 +30,8 @@ jobs:
     - name: Do the thing
       run: |
         python something.py
- 
+    - name: Get output
+      uses: actions/upload-artifact@v3
+      with:
+        name: script-output
+        path: foo.pdf
