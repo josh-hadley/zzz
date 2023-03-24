@@ -13,6 +13,7 @@ def _get_options():
     )
     ap.add_argument(
         '-s', '--size',
+        type=int,
         default=100
     )
 
